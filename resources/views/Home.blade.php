@@ -7,8 +7,8 @@
         <div class="flex justify-between items-center">
             <div class="flex-shrink-0">
                 <a href="{{ route('home') }}" class="flex items-center">
-                    <img src="{{ asset('images/logo.png') }}" alt="Logo Ma Boutique en Ligne" class="h-10">
-                    <span class="ml-3 text-xl font-bold text-gray-900">Ma Boutique</span>
+                    <img src="{{ asset('images/logo.png') }}" alt="Logo de Eshop Maroc" class="h-10">
+                    <span class="ml-3 text-xl font-bold text-gray-900">Eshop Maroc</span>
                 </a>
             </div>
             <nav class="hidden md:flex space-x-8">
@@ -38,7 +38,7 @@
     <div class="relative bg-indigo-700 rounded-lg overflow-hidden mb-12">
         <div class="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-700 opacity-90"></div>
         <div class="relative max-w-7xl mx-auto py-12 px-4 sm:py-20 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Bienvenue sur Ma Boutique</h1>
+            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Bienvenue sur Eshop Maroc</h1>
             <p class="mt-6 max-w-lg mx-auto text-xl text-indigo-100 sm:max-w-3xl">Découvrez notre nouvelle collection et profitez de nos offres exclusives.</p>
             <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                 <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
@@ -63,7 +63,7 @@
             @forelse($featuredProducts as $product)
                 <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
                     <a href="{{ route('products.show', $product->id) }}">
-                        <img src="{{ asset('images/products/' . $product->image) }}" alt="{{ $product->name }}" class="w-full h-48 object-cover object-center">
+                        <img src="{{ asset('images/products/' . $product->image) }}" alt="{{ $product->name }}" class="w-full h-48 object-cover object-top">
                     </a>
                     <div class="p-4">
                         <h3 class="text-lg font-semibold text-gray-900">{{ $product->name }}</h3>
